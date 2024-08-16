@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="es-co">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
 </head>
+
 <body>
-    <h1>Correo: julian.juligar2004@gmail.com</h1>
+    
+    <main>
+        <div class="container">
+            <div class="container__aluraLogo">
+                <img src="/img/Logo.png" alt="logo de Alura">
+            </div>
+            <div class="container__contenido">
+
+                <div class="container__informaciones">
+                        <div class="container__texto">
+                            <h1></h1>
+                            <p class="texto__parrafo"></p>
+                        </div>
+                        <input type="text" id="cajonTexto" class="container__input">
+                        <div>
+                            <h6 class="texto__información"><img src="/img/exclamation-circle-fill 16x16.png">Solo letras minúsculas y sin acentos</h6>
+                        </div>
+                        <div class="container__botones">
+                            <div class="container__botones__hz">
+                                <button onclick="botonReset();" class="container__boton__peque" id="reset"><img src="/img/ico-reiniciar-32px.png"></button>
+                                <button onclick="botonEncriptar();" id="encriptar" class="container__boton">Encriptar</button>
+                            </div>
+                            <div class="container__botones__hz">
+                                <button onclick="botonDesencriptar();" class="container__boton" id="desencriptar" disabled>Desencriptar</button>
+                                <button onclick="botonCopiar();" class="container__boton__peque" id="copiar"><img src="/img/ico-copiarDocB-32px.png"></button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                <img src="./img/persona 625.png" alt="Un detective mirandote" class="container__imagen" />
+            </div>
+        </div>
+    </main>
+    <script src="encriptador.js" defer></script>
 </body>
+
 </html>
