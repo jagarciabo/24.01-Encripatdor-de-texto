@@ -13,6 +13,7 @@ function condicionesIniciales () {
  
     //habilitar opciones
     document.getElementById('desencriptar').removeAttribute('disabled');
+    document.getElementById('encriptar').removeAttribute('disabled');
 
     //ocultar botones 
     ocultarBoton('reset');
@@ -85,6 +86,9 @@ function botonEncriptar () {
 
         //Habilitar cajon
         document.getElementById('cajonTexto').removeAttribute('disabled');
+
+        //deshabilitar boton desencriptar
+        document.querySelector('#desencriptar').setAttribute('disabled','true');
 
         // mostrar botones
         mostrarBoton("reset");
